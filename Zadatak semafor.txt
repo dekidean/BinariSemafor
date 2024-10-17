@@ -1,0 +1,14 @@
+Zadatak SEMAFOR
+Link https://www.random.org/integers/?num=1&min=0&max=255&col=1&base=10&format=plain&rnd=new
+vraca slucajni broj u intervalu od 0 do 255.
+Zadatak:
+Problem treba resiti u JavaScript jeziku. Zadatak moze da se resi bez koriscenja third-party biblioteka.
+1) Svake sekunde potrebno je ajax zahtevom povuci slucajan broj iz servisa sa prethodnog linka.
+Dobijen broj potrebno je konvertovati u binarni oblik i to u osmobitnom formatu tako da recimo broj 105 predstavljen u binarnom obliku je 01101001, a naprimer broj 1 je predstavljen sa 00000001.
+Prikaz na stranici treba da bude responzivan (repsonsive). Primer uradjenog zadatka ima na 
+2) Binarni oblik broja treba prikazati na stranici tako da nule budu predstavljene crvenim krugom, jedinice treba da budu zeleni krug, period dok se ceka nova vrednost je prikazana sa 8 zutih krugova
+https://agenzzia.com/semaphore
+
+Korisni alati:
+Postman Windows applikacija: https://www.getpostman.com/downloads/
+Postman sajt na kome postoji Get Started link: https://www.getpostman.com/

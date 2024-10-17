@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #dbf0e0;
+}
+.binarni-semafor {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.krug {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.crveni {
+  background-color: red;
+}
+.zuti {
+  background-color: yellow;
+}
+.zeleni {
+  background-color: green;
+}
+
+@media (max-width: 800px) {
+  .krug {
+    width: 70px;
+    height: 70px;
+  }
+}
