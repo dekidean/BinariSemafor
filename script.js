@@ -7,7 +7,7 @@ function fetchData() {
     .then((response) => response.text())
     .then((broj) => {
       const randomBroj = parseInt(broj.trim()); // dobijanje random broja
-      binarniSemafor(randomBroj);
+      binarniPrikaz(randomBroj);
     })
     .catch((error) => {
       console.error("Error ", error);
@@ -29,3 +29,27 @@ function blicanje() {
 }
 
 // 2) Transformacija binarnog broja u boje kugli
+
+//funkcija prikaza binarnog broja od dobijenog broja
+function binarniPrikaz(bibroj) {
+  const binarniSemafor = document.getElementById("binarniSemafor");
+  binarniSemafor.innerHTML = ""; // Clear previous display
+
+  // Convert the bibroj to binary and pad it to 8 digits
+  let binariString = bibroj.toString(2).padStart(8, "0");
+
+  // loop kroz broj
+  for (let br of binariString) {
+    const krug = document.createElement("div");
+    krug.classList.add("krug");
+
+    if (br === "0") {
+      // dodavanje klasa u odnosu da li su 0 ili 1
+      krug.classList.add("crveni");
+    } else {
+      krug.classList.add("zeleni");
+    }
+
+    binarniSemafor.appendChild(krug);
+  }
+}
